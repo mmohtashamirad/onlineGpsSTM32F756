@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build all",
+            "group": "build",
+            "type": "shell",
+            "command": "make",
+            "args": ["all", "-j16"]
+        },
+        {
+            "label": "Build clean",
+            "group": "build",
+            "type": "shell",
+            "command": "make",
+            "args": ["clean"]
+        },
+        {
+            "label": "JFlash",
+            "group": "build",
+            "type": "shell",
+            "command": "make",
+            "args": ["jflash","-j16"]
+        },
+        {
+            "label": "build and flash",
+            "group": "build",
+            "dependsOn":["Build all","JFlash"]
+        },
+        
+    ]
+}
