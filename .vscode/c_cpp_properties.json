@@ -13,9 +13,10 @@
                 "_UNICODE",
                 "STM32F756xx",
             ],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "clang-arm",
+            "compilerPath": "c:/ARM/arm-none-eabi/bin/arm-none-eabi-gcc"
         }
     ],
     "version": 4
