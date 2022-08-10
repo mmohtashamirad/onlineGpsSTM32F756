@@ -3,16 +3,20 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "c:/ARM/arm-none-eabi/arm-none-eabi/include",
+                "C:/ARM/arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "STM32F756xx",
             ],
-            "cStandard": "c17",
-            "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "clang-arm",
+            "compilerPath": "c:/ARM/arm-none-eabi/bin/arm-none-eabi-gcc"
         }
     ],
     "version": 4
