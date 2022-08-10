@@ -1,4 +1,5 @@
 {
+    "window.title": "${dirty}Device GpsTrack -> ${activeEditorShort}${separator}${separator}",
     "files.exclude": {
         "**/*.log": true
     },
@@ -17,6 +18,9 @@
             "args": []
         },
         
+    },
+    "files.associations": {
+        "cstdint": "cpp"
     },
     // "gdbPath": "/c/ARM/arm-none-eabi/bin/arm-none-eabi-gdb",
     // "JLinkGDBServerPath": "/c/Program Files/SEGGER/JLink/JLinkGDBServer",

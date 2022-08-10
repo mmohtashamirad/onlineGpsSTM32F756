@@ -64,8 +64,8 @@ Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c \
 Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c \
 Core/Src/system_stm32f7xx.c  
 
-# CXX_SOURCES = Application\system_utils\clock_and_time\stm32f756zg\clock_and_time_stm32f756zg.cxx
-CXX_SOURCES += Core/Src/main.cxx
+CXX_SOURCES  = Core/Src/main.cxx
+CXX_SOURCES += Application/system_utils/clock_and_time/stm32f756zg/clock_and_time_stm32f756zg.cxx
 
 # ASM sources
 ASM_SOURCES =  \

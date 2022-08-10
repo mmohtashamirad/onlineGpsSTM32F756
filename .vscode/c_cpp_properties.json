@@ -3,12 +3,15 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "c:/ARM/arm-none-eabi/arm-none-eabi/include",
+                "C:/ARM/arm-none-eabi/lib/gcc/arm-none-eabi/10.3.1/include"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "STM32F756xx",
             ],
             "cStandard": "c17",
             "cppStandard": "c++17",
