@@ -20,6 +20,7 @@
 #include "main.h"
 #include "string.h"
 #include <stdio.h>
+#include "clock_and_time.hxx"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -116,6 +117,7 @@ int main(void)
   MX_ETH_Init();
   MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
+  ClockAndTime::periodicTimerInit();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -125,11 +127,11 @@ int main(void)
   int i=0;
   while (1)
   {
-    HAL_Delay(100);
+    HAL_Delay(300);
     HAL_GPIO_TogglePin(LD1_GPIO_Port,LD1_Pin);
-    HAL_Delay(100);
+    HAL_Delay(300);
     HAL_GPIO_TogglePin(LD2_GPIO_Port,LD2_Pin);
-    HAL_Delay(100);
+    ClockAndTime::delay_ms(300);
     HAL_GPIO_TogglePin(LD3_GPIO_Port,LD3_Pin);
     
     printf("test %04d...\n\n",i++);

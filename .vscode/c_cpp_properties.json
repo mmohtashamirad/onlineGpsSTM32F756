@@ -12,6 +12,7 @@
                 "UNICODE",
                 "_UNICODE",
                 "STM32F756xx",
+                "HAL_TIM_MODULE_ENABLED",
             ],
             "cStandard": "c99",
             "cppStandard": "c++11",
